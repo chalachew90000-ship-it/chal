@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdraw Money</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans pb-10">
+
+    <!-- Header -->
+    <div class="bg-blue-600 text-white p-4 shadow-lg flex items-center gap-3">
+        <a href="me.html" class="text-white text-lg"><i class="fa-solid fa-arrow-left"></i></a>
+        <h1 class="text-lg font-bold">Withdrawal / ገንዘብ ማውጫ</h1>
+    </div>
+
+    <div class="max-w-md mx-auto p-4">
+        
+        <!-- Balance Card -->
+        <div class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-2xl p-5 shadow-md mb-6">
+            <p class="text-xs opacity-80">Available Balance (ሊወጣ የሚችል)</p>
+            <h2 class="text-2xl font-extrabold mt-1">ETB 0.00</h2>
+        </div>
+
+        <!-- Withdrawal Form -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+            <h3 class="font-bold text-gray-800 mb-4 text-sm">የማውጫ መረጃዎችን ያስገቡ</h3>
+
+            <form>
+                <!-- Select Bank -->
+                <div class="mb-4">
+                    <label class="block text-xs font-semibold text-gray-600 mb-1">የባንክ አይነት ይምረጡ</label>
+                    <select class="w-full p-3 rounded-xl border border-gray-200 text-sm focus:outline-blue-500 bg-white">
+                        <option>Commercial Bank of Ethiopia (CBE)</option>
+                        <option>Telebirr (ቴሌብር)</option>
+                        <option>Dashen Bank</option>
+                        <option>Abyssinia Bank</option>
+                    </select>
+                </div>
+
+                <!-- Account Holder Name -->
+                <div class="mb-4">
+                    <label class="block text-xs font-semibold text-gray-600 mb-1">የአካውንቱ ባለቤት ሙሉ ስም</label>
+                    <input type="text" placeholder="የእርስዎን ስም ያስገቡ" class="w-full p-3 rounded-xl border border-gray-200 text-sm focus:outline-blue-500">
+                </div>
+
+                <!-- Account Number -->
+                <div class="mb-4">
+                    <label class="block text-xs font-semibold text-gray-600 mb-1">የባንክ ሂሳብ ቁጥር / Phone Number</label>
+                    <input type="text" placeholder="1000... ወይም 09..." class="w-full p-3 rounded-xl border border-gray-200 text-sm focus:outline-blue-500">
+                </div>
+
+                <!-- Amount -->
+                <div class="mb-6">
+                    <label class="block text-xs font-semibold text-gray-600 mb-1">የሚወጣው ገንዘብ መጠን (ETB)</label>
+                    <input type="number" placeholder="ከመጠኑ ያነሰ መሆን አለበት" class="w-full p-3 rounded-xl border border-gray-200 text-sm focus:outline-blue-500">
+                </div>
+
+                <!-- Submit Button -->
+                <button type="button" class="w-full bg-blue-600 text-white py-3.5 rounded-xl font-bold text-sm shadow-md">Confirm Withdrawal</button>
+            </form>
+        </div>
+
+        <!-- Instructions -->
+        <div class="mt-6 bg-yellow-50 p-4 rounded-xl border border-yellow-200 text-xs text-yellow-800">
+            <p class="font-bold mb-1"><i class="fa-solid fa-triangle-exclamation"></i> ማስታወሻ፡</p>
+            <p>ገንዘብ ማውጫ ጥያቄ ካቀረቡ በኋላ ከ24 ሰዓት ባልበለጠ ጊዜ ውስጥ ወደ ባንክ አካውንትዎ ገቢ ይደረጋል።</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

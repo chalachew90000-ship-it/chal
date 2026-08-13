@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans pb-24">
+
+    <!-- Header -->
+    <div class="bg-blue-600 text-white p-6 shadow-lg flex justify-between items-center">
+        <h1 class="text-xl font-bold">Team</h1>
+        <button class="bg-white/20 text-xs px-3 py-1.5 rounded-full border border-white/40">Team Members</button>
+    </div>
+
+    <div class="max-w-md mx-auto p-4">
+        <!-- Team Data Center -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm mb-4">
+            <div class="flex justify-between items-center mb-2">
+                <h2 class="font-bold text-gray-800">Team Data Center</h2>
+                <button class="text-xs text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">Select date</button>
+            </div>
+            <p class="text-xs text-gray-400 mb-4">Review team registrations, task completion, and earnings across each level.</p>
+
+            <div class="grid grid-cols-3 gap-2 text-center">
+                <div class="bg-blue-50/50 p-3 rounded-xl">
+                    <p class="text-xs text-gray-500">Registrations</p>
+                    <p class="text-lg font-bold text-blue-600">0</p>
+                </div>
+                <div class="bg-blue-50/50 p-3 rounded-xl">
+                    <p class="text-xs text-gray-500">Tasks</p>
+                    <p class="text-lg font-bold text-blue-600">0</p>
+                </div>
+                <div class="bg-blue-50/50 p-3 rounded-xl">
+                    <p class="text-xs text-gray-500">Income</p>
+                    <p class="text-xs font-bold text-blue-600 mt-1">ETB 0.00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Level 1 Team -->
+        <div class="bg-white rounded-2xl p-4 mb-4 shadow-sm">
+            <div class="flex justify-between items-center mb-3">
+                <p class="font-bold text-gray-800">Level 1 team</p>
+                <a href="#" class="text-xs text-blue-600 font-semibold">View members</a>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center">
+                <div class="bg-gray-50 p-2 rounded-xl">
+                    <p class="text-[10px] text-gray-400">Registered/Active</p>
+                    <p class="text-sm font-bold text-gray-700">0/0</p>
+                </div>
+                <div class="bg-gray-50 p-2 rounded-xl">
+                    <p class="text-[10px] text-gray-400">Commission rate</p>
+                    <p class="text-sm font-bold text-blue-600">12%</p>
+                </div>
+                <div class="bg-gray-50 p-2 rounded-xl">
+                    <p class="text-[10px] text-gray-400">Team income</p>
+                    <p class="text-xs font-bold text-gray-700 mt-0.5">ETB 0.00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Level 2 Team -->
+        <div class="bg-white rounded-2xl p-4 mb-4 shadow-sm">
+            <div class="flex justify-between items-center mb-3">
+                <p class="font-bold text-gray-800">Level 2 team</p>
+                <a href="#" class="text-xs text-blue-600 font-semibold">View members</a>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center">
+                <div class="bg-gray-50 p-2 rounded-xl">
+                    <p class="text-[10px] text-gray-400">Registered/Active</p>
+                    <p class="text-sm font-bold text-gray-700">0/0</p>
+                </div>
+                <div class="bg-gray-50 p-2 rounded-xl">
+                    <p class="text-[10px] text-gray-400">Commission rate</p>
+                    <p class="text-sm font-bold text-blue-600">1%</p>
+                </div>
+                <div class="bg-gray-50 p-2 rounded-xl">
+                    <p class="text-[10px] text-gray-400">Team income</p>
+                    <p class="text-xs font-bold text-gray-700 mt-0.5">ETB 0.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 py-2 px-6 flex justify-between items-center text-center shadow-lg">
+        <a href="index.html" class="text-gray-400 flex flex-col items-center">
+            <i class="fa-solid fa-house text-lg"></i>
+            <span class="text-xs font-medium mt-1">Home</span>
+        </a>
+        <a href="tasks.html" class="text-gray-400 flex flex-col items-center">
+            <i class="fa-solid fa-list-check text-lg"></i>
+            <span class="text-xs font-medium mt-1">Tasks</span>
+        </a>
+        <a href="#" class="text-gray-400 flex flex-col items-center">
+            <i class="fa-solid fa-sack-dollar text-lg"></i>
+            <span class="text-xs font-medium mt-1">Wealth</span>
+        </a>
+        <a href="team.html" class="text-blue-600 flex flex-col items-center">
+            <i class="fa-solid fa-users text-lg"></i>
+            <span class="text-xs font-medium mt-1">Team</span>
+        </a>
+        <a href="#" class="text-gray-400 flex flex-col items-center">
+            <i class="fa-solid fa-user text-lg"></i>
+            <span class="text-xs font-medium mt-1">Me</span>
+        </a>
+    </div>
+
+</body>
+</html>

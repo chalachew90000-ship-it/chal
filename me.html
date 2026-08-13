@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans pb-24">
+
+    <!-- Top Profile Banner -->
+    <div class="bg-blue-600 text-white p-6 rounded-b-3xl shadow-lg relative">
+        <div class="flex items-center justify-between mt-2">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-white text-blue-600 rounded-full flex items-center justify-center font-bold text-xl border-2 border-white shadow">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div>
+                    <p class="font-bold text-lg">+                </p>
+                    <span class="bg-yellow-400 text-blue-900 text-xs font-black px-2 py-0.5 rounded-md">VIP1</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recharge & Withdraw Buttons -->
+        <div class="flex justify-around bg-white/10 backdrop-blur-md rounded-2xl p-4 mt-6 border border-white/20">
+            <a href="#" class="flex items-center gap-2 text-white font-semibold">
+                <i class="fa-solid fa-circle-arrow-down text-xl text-green-400"></i> Recharge
+            </a>
+            <div class="w-[1px] bg-white/30"></div>
+            <a href="#" class="flex items-center gap-2 text-white font-semibold">
+                <i class="fa-solid fa-circle-arrow-up text-xl text-yellow-300"></i> Withdraw
+            </a>
+        </div>
+    </div>
+
+    <div class="max-w-md mx-auto p-4">
+        <!-- Wallet Cards -->
+        <div class="grid grid-cols-2 gap-3 mb-4">
+            <div class="bg-blue-50 p-4 rounded-2xl border border-blue-100">
+                <p class="text-xs text-gray-500">Earnings wallet</p>
+                <p class="text-lg font-bold text-blue-600 mt-1">0.00</p>
+            </div>
+            <div class="bg-orange-50 p-4 rounded-2xl border border-orange-100">
+                <p class="text-xs text-gray-500">Frozen Amount</p>
+                <p class="text-lg font-bold text-orange-500 mt-1"</p>
+            </div>
+        </div>
+
+        <!-- Income Overview -->
+        <div class="bg-white rounded-2xl p-4 mb-4 shadow-sm">
+            <h3 class="font-bold text-gray-      mb-3 text-sm">VIP1 Income Overview</h3>
+            <div class="grid grid-cols-2 gap-3">
+                <div class="bg-gray-50 p-3 rounded-xl">
+                    <p class="text-[10px] text-gray-400">Yesterday's earnings</p>
+                    <p class="text-sm font-bold text-gray-800 mt-1">ETB 200.00</p>
+                </div>
+                <div class="bg-yellow-50 p-3 rounded-xl border border-yellow-100">
+                    <p class="text-[10px] text-yellow-600">Today's earnings</p>
+                    <p class="text-sm font-bold text-yellow-700 mt-1">ETB 200.00</p>
+                </div>
+                <div class="bg-gray-50 p-3 rounded-xl">
+                    <p class="text-[10px] text-gray-400">Weekly earnings</p>
+                    <p class="text-sm font-bold text-gray-800 mt-1">ETB 800.00</p>
+                </div>
+                <div class="bg-gray-50 p-3 rounded-xl">
+                    <p class="text-[10px] text-gray-400">This month's earnings</p>
+                    <p class="text-sm font-bold text-gray-800 mt-1">ETB 2,400.00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Links -->
+        <div class="bg-white rounded-2xl shadow-sm divide-y divide-gray-100">
+            <a href="#" class="flex items-center justify-between p-4 text-gray-700 hover:bg-gray-50">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-gear text-blue-500"></i>
+                    <span class="text-sm font-medium">Personal Information</span>
+                </div>
+                <i class="fa-solid fa-chevron-right text-xs text-gray-400"></i>
+            </a>
+            <a href="#" class="flex items-center justify-between p-4 text-gray-700 hover:bg-gray-50">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-headset text-green-500"></i>
+                    <span class="text-sm font-medium">Customer Service</span>
+                </div>
+                <i class="fa-solid fa-chevron-right text-xs text-gray-400"></i>
+            </a>
+            <a href="#" class="flex items-center justify-between p-4 text-gray-700 hover:bg-gray-50">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-user-plus text-purple-500"></i>
+                    <span class="text-sm font-medium">Invite Friends</span>
+                </div>
+                <i class="fa-solid fa-chevron-right text-xs text-gray-400"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 py-2 px-6 flex justify-between items-center text-center shadow-lg">
+        <a href="index.html" class="text-gray-400 flex flex-col items-center">
+            <i class="fa-solid fa-house text-lg"></i>
+            <span class="text-xs font-medium mt-1">Home</span>
+        </a>
+        <a href="tasks.html" class="text-gray-400 flex flex-col items-center">
+            <i class="fa-solid fa-list-check text-lg"></i>
+            <span class="text-xs font-medium mt-1">Tasks</span>
+        </a>
+        <a href="#" class="text-gray-400 flex flex-col items-center">
+            <i class="fa-solid fa-sack-dollar text-lg"></i>
+            <span class="text-xs font-medium mt-1">Wealth</span>
+        </a>
+        <a href="team.html" class="text-gray-400 flex flex-col items-center">
+            <i class="fa-solid fa-users text-lg"></i>
+            <span class="text-xs font-medium mt-1">Team</span>
+        </a>
+        <a href="me.html" class="text-blue-600 flex flex-col items-center">
+            <i class="fa-solid fa-user text-lg"></i>
+            <span class="text-xs font-medium mt-1">Me</span>
+        </a>
+    </div>
+
+</body>
+</html>
